@@ -1,0 +1,24 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache and test files
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Local databases
+naturebuddy.db
+*.db
+*.sqlite
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
