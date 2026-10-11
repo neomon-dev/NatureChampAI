@@ -12,7 +12,7 @@ NatureChamp AI is a local-first Streamlit companion that turns curiosity into re
 - **Offline facts:** curated facts remain available without internet access.
 - **Bundled imagery:** forest, bird, flower, and garden photographs are stored in `assets/` for offline dashboard rendering. Sources and license notes are in [`assets/SOURCES.md`](assets/SOURCES.md).
 ## Deployment
-https://naturebuddyai.streamlit.app/
+Deploy the app from the `main` branch using the Streamlit deployment settings for the NatureChampAI repository.
 ## Screenshots
 <img width="1906" height="1147" alt="image" src="https://github.com/user-attachments/assets/fbe8d5b8-202b-4599-8e4d-e67cfb381ad1" />
 
