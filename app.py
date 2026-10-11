@@ -291,7 +291,7 @@ def progress_page() -> None:
 def settings_page() -> None:
     render_header("Settings", "Local-first configuration and privacy boundaries.")
     st.markdown(f"- Ollama URL: `{settings.ollama_base_url}`\n- Chat model: `{settings.ollama_model}`\n- Vision model: `{settings.ollama_vision_model or 'not configured'}`\n- Database: `{settings.database_path}`")
-    st.info("Set values in a `.env` file based on `.env.example`, then restart Streamlit. NatureBuddy does not require a paid API key.")
+    st.info("Set values in a `.env` file based on `.env.example`, then restart Streamlit. NatureChamp does not require a paid API key.")
     st.subheader("Model guidance")
     st.write("The default `qwen2.5:3b` is a configurable open-weight model tag commonly supported by Ollama. Verify the model card and license for the exact tag you install. Qwen model licenses may include additional conditions; review the upstream license before redistribution.")
     st.subheader("Privacy")
@@ -302,7 +302,7 @@ def main() -> None:
     if "page" not in st.session_state:
         st.session_state["page"] = "Home Dashboard"
     with st.sidebar:
-        st.markdown("## 🌿 NatureBuddy")
+        st.markdown("## 🌿 NatureChamp AI")
         page = st.radio("Explore", ["Home Dashboard", "AI Nature Companion", "Outdoor Missions", "Discover from Photo", "Nature Journal", "Progress & Achievements", "Settings"], index=["Home Dashboard", "AI Nature Companion", "Outdoor Missions", "Discover from Photo", "Nature Journal", "Progress & Achievements", "Settings"].index(st.session_state["page"]))
         st.session_state["page"] = page
         st.divider()
