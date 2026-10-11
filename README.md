@@ -11,13 +11,12 @@ NatureChamp AI is a local-first Streamlit companion that turns curiosity into re
 - **Progress:** confirmed mission completions, minutes, categories, badges, and weekly activity.
 - **Offline facts:** curated facts remain available without internet access.
 - **Bundled imagery:** forest, bird, flower, and garden photographs are stored in `assets/` for offline dashboard rendering. Sources and license notes are in [`assets/SOURCES.md`](assets/SOURCES.md).
-
+## Deployment
+https://naturebuddyai.streamlit.app/
 ## Screenshots
+<img width="1906" height="1147" alt="image" src="https://github.com/user-attachments/assets/fbe8d5b8-202b-4599-8e4d-e67cfb381ad1" />
 
-Add screenshots here after launching the app:
-
-![Home dashboard placeholder](docs/home-dashboard.png)
-![Mission page placeholder](docs/outdoor-mission.png)
+<img width="1912" height="1142" alt="image" src="https://github.com/user-attachments/assets/4db466ba-eb7b-40a9-8796-426c50859c61" />
 
 ## Architecture
 
