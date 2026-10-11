@@ -1,1 +1,1 @@
-"""SQLite persistence for NatureBuddy AI."""
+"""SQLite persistence for NatureChamp AI."""

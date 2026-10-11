@@ -1,6 +1,6 @@
-# NatureBuddy AI 🌿
+# NatureChamp AI 🌿
 
-NatureBuddy AI is a local-first Streamlit companion that turns curiosity into real outdoor observation. It combines a configurable open-weight Ollama model with deterministic offline missions, a local SQLite journal, progress tracking, curated nature facts, and cautious local photo analysis.
+NatureChamp AI is a local-first Streamlit companion that turns curiosity into real outdoor observation. It combines a configurable open-weight Ollama model with deterministic offline missions, a local SQLite journal, progress tracking, curated nature facts, and cautious local photo analysis.
 
 ## Features
 
@@ -45,7 +45,7 @@ Set `OLLAMA_MODEL` in `.env` if you use another installed model. For image analy
 
 ## Offline and privacy behavior
 
-After dependencies and any desired models are downloaded, the facts, journal, progress, image validation, and deterministic mission library work without internet. AI features require a running local Ollama server and installed model. A failed AI request is never replaced with fake AI output. Journal data is stored in `naturebuddy.db`; uploaded photos are processed in memory and are not persisted. No paid API key is used and no third-party service receives user photos or conversations.
+After dependencies and any desired models are downloaded, the facts, journal, progress, image validation, and deterministic mission library work without internet. AI features require a running local Ollama server and installed model. A failed AI request is never replaced with fake AI output. Journal data is stored in `naturechamp.db`; uploaded photos are processed in memory and are not persisted. No paid API key is used and no third-party service receives user photos or conversations.
 
 The default `qwen2.5:3b` is an open-weight Ollama model tag. Verify the exact upstream model card and license before redistribution; Qwen releases can have license-specific conditions. The application itself can be distributed under the repository's chosen open-source license.
 
@@ -54,7 +54,7 @@ The default `qwen2.5:3b` is an open-weight Ollama model tag. Verify the exact up
 - **Ollama not reachable:** start Ollama and confirm `http://localhost:11434/api/tags` responds.
 - **Model unavailable:** run `ollama list`, then `ollama pull <model>` or update `OLLAMA_MODEL`.
 - **PowerShell activation blocked:** use `Set-ExecutionPolicy -Scope Process Bypass`.
-- **Database issue:** stop Streamlit and check that the configured `NATUREBUDDY_DB_PATH` directory is writable.
+- **Database issue:** stop Streamlit and check that the configured `NATURECHAMP_DB_PATH` directory is writable.
 
 ## Testing
 

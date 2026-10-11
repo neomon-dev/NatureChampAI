@@ -1,1 +1,1 @@
-"""Business services for NatureBuddy AI."""
+"""Business services for NatureChamp AI."""

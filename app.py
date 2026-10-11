@@ -1,4 +1,4 @@
-"""NatureBuddy AI Streamlit application."""
+"""NatureChamp AI Streamlit application."""
 
 from datetime import date
 import csv
@@ -24,7 +24,7 @@ from services.nature_facts import load_facts
 from services.vision_service import validate_image, VisionService
 
 
-st.set_page_config(page_title="NatureBuddy AI", page_icon="🌿", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="NatureChamp AI", page_icon="🌿", layout="wide", initial_sidebar_state="expanded")
 ASSET_DIR = Path(__file__).parent / "assets"
 st.markdown(
     """
@@ -95,7 +95,7 @@ def home_page() -> None:
         if hero_image:
             st.image(str(hero_image), caption="A trail is waiting", use_container_width=True)
     with text_col:
-        st.markdown('<div class="hero"><h1>NatureBuddy AI</h1><p>Your local, open-weight AI companion for learning outside.</p><p>Read a mission, put the phone away, and let curiosity lead.</p></div>', unsafe_allow_html=True)
+        st.markdown('<div class="hero"><h1>NatureChamp AI</h1><p>Your local, open-weight AI companion for learning outside.</p><p>Read a mission, put the phone away, and let curiosity lead.</p></div>', unsafe_allow_html=True)
     st.markdown('<div class="screen-reminder">🌱 <strong>Touch grass reminder:</strong> this app is a launchpad for outdoor time, not a destination. Prepare here, then explore away from the screen.</div>', unsafe_allow_html=True)
     st.subheader("Your local footprint")
     cols = st.columns(4)
@@ -149,7 +149,7 @@ def companion_page() -> None:
         with st.chat_message("user"):
             st.markdown(prompt)
         system = (
-            "You are NatureBuddy AI. Be concise, warm, educational, and suggest a real-world activity. "
+            "You are NatureChamp AI. Be concise, warm, educational, and suggest a real-world activity. "
             "Never advise eating unknown plants, handling wildlife, approaching nests, or disturbing habitats. "
             "Mention uncertainty and local expert guidance when identification or safety is unclear."
         )
@@ -268,8 +268,8 @@ def journal_page() -> None:
         writer = csv.writer(csv_buffer)
         writer.writerow(["date", "location", "title", "notes", "mission_completed"])
         writer.writerows((e["entry_date"], e["location_label"], e["title"], e["notes"], e["mission_completed"]) for e in entries)
-        st.download_button("Download journal CSV", csv_buffer.getvalue(), "naturebuddy-journal.csv", "text/csv")
-        st.download_button("Download journal JSON", json.dumps([dict(e) for e in entries], indent=2, default=str), "naturebuddy-journal.json", "application/json")
+        st.download_button("Download journal CSV", csv_buffer.getvalue(), "naturechamp-journal.csv", "text/csv")
+        st.download_button("Download journal JSON", json.dumps([dict(e) for e in entries], indent=2, default=str), "naturechamp-journal.json", "application/json")
 
 
 def progress_page() -> None:

@@ -1,4 +1,4 @@
-# NatureBuddy AI architecture
+# NatureChamp AI architecture
 
 ## Boundaries
 

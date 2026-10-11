@@ -14,7 +14,7 @@ __pycache__/
 .streamlit/secrets.toml
 
 # Local databases
-naturebuddy.db
+naturechamp.db
 *.db
 *.sqlite
 *.sqlite3

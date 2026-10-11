@@ -1,1 +1,1 @@
-"""Tests for NatureBuddy AI."""
+"""Tests for NatureChamp AI."""
